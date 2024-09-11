@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This project implements the backend for a **Bike Renting System** in the coastal town of Cox's Bazar. The system allows users to register, rent bikes, and manage bookings. The primary focus of this project is on **error handling**, **CRUD operations**, **authentication**, **authorization**, and **transactions** (where applicable). It has been developed using **TypeScript** and **Node.js (Express.js)**, with **MongoDB** as the database, using **Mongoose** and **Zod** for schema validation.
+This project implements the backend for a **Bike Renting System** in the coastal town of Cox's Bazar. The system allows users to register, rent bikes, and manage bookings. The primary focus of this project is on **error handling**, **CRUD operations**, **authentication**, **authorization**, and **transactions**. It has been developed using **TypeScript** and **Node.js (Express.js)**, with **MongoDB** as the database, using **Mongoose** and **Zod** for schema validation.
 
 ## Story
 
