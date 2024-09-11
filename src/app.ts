@@ -1,21 +1,20 @@
 import express, { Request, Response } from "express";
-import { MoviesRouter } from "./Modules/Movies/movie.route";
+import cors from 'cors'
+import { globalErrorHandler } from "./middleweres/globalErrorHandler";
+import { routeNotFound } from "./middleweres/route.notFound";
+
 const app = express();
 // parsers that must called in upperbody of a document
 app.use(express.json())
+app.use(cors())
 
 // I will maintain here all the route but exicution will be in different file,
 
-app.use('/api/movies',MoviesRouter);
-app.use('/api/allmovies',MoviesRouter);
-// app.use('/practice',MoviesRouter)
-app.use("/api/movie",MoviesRouter)
-
-
 // initial route controller
 app.get('/', (req: Request, res: Response) => {
-    res.send('Hello developer')
+    res.send('Welcome to Bike Rental Management System')
 })
 
-
+app.use(globalErrorHandler);
+app.use(routeNotFound);
 export default app;

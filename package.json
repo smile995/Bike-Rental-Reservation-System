@@ -1,17 +1,23 @@
 {
   "scripts": {
-    "start:prod":"node ./dist/server.js",
-    "find-error":"npx eslint src",
-    "fix-error":"npx eslint src --fix",
+    "start:prod": "node ./dist/server.js",
+    "find-error": "npx eslint src",
+    "fix-error": "npx eslint src --fix",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start:dev": "ts-node-dev --respawn --transpile-only ./src/server.ts"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.20.0",
     "http-status": "^1.7.4",
     "mongoose": "^8.6.1",
+    "ts-node-dev": "^2.0.0",
     "typescript": "^5.6.2",
     "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21"
   }
 }
